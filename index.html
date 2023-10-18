@@ -148,6 +148,86 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
+        <div class="container">
+          <div class="swiper main-category__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex01.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#명문보딩스쿨</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex02.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#영어캠프</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex03.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#해외 스쿨링</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex04.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#경시대회 정보</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex05.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#AP심화과목</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex06.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#보딩스쿨 캠프</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex07.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#온라인 스쿨</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex08.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#클럽활동</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="category">
+                  <div class="thum">
+                    <img src="./img/main/navi_ex01.png" alt="카테고리 이미지">
+                  </div>
+                  <p>#클럽활동</p>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
@@ -297,6 +377,15 @@
 
     modal_banner_swiper.controller.control = modal_banner_paging;
 
+    /* 카테고리별 스와이퍼 */
+    var main_category_swiper = new Swiper(".main-category__swiper", {
+      spaceBetween: 15,
+      slidesPerView: 8,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
 </body>
 </html>
