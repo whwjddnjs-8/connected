@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>커넥티드</title>
+  <link rel="icon" href="../img/common/logo_icon.svg">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="/css/common2.css">
+  <script src="/js/common.js" defer></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="band-banner">
+        <div class="banner" style="background-color: #0A0A0A;">
+          <div class="banner_box">
+            <img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+            <button type="button" class="btn_close"></button>
+          </div>
+        </div>
+        <!-- <div class="banner" style="background-color: #0A0A0A;">
+                <div class="banner_box">
+                  <img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+                  <button type="button" class="btn_close"></button>
+                </div>
+              </div> -->
+      </div>
+      <div class="header__inner">
+        <div class="hd__top">
+          <div class="hd-search">
+            <a href="/" class="logo">
+              <img src="../img/common/logo.svg" alt="커넥티드 로고">
+            </a>
+            <form action="" class="form_hd-search">
+              <fieldset>
+                <div class="search">
+                  <input type="text" placeholder="검색어를 입력하세요.">
+                  <button type="button" class="btn_search"></button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="hd-language">
+            <ul class="hd-navigation">
+              <li>
+                <div class="setting-lang">
+                  <span class="current">KOR</span>
+                  <button type="button" class="btn_open"></button>
+                  <ul class="lang_list">
+                    <li>KOR</li>
+                    <li>ENG</li>
+                    <li>CN</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd__bottom">
+          <div class="hd_category_gnb">
+            <div class="category">
+              <div class="category_icon">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>전체 카테고리</p>
+              <button type="button" class="btn_open"></button>
+            </div>
+            <nav id="gnb">
+              <ul>
+                <li><a href="#">학교</a></li>
+                <li><a href="#">온라인학교</a></li>
+                <li><a href="#">단기활동</a></li>
+                <li><a href="#">온라인 단기활동</a></li>
+                <li><a href="#">매거진</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hd_login">
+            <!-- 비로그인 환경 -->
+            <!-- <a href="#" class="btn_login">로그인</a>
+                <a href="#" class="btn-smType btn-round btn_signup">회원가입</a> -->
+            <!-- 로그인 환경 -->
+            <a href="#" class="btn_logout">로그아웃</a>
+            <div class="hd_mypage">
+              <button type="button" class="btn-smType btn-round btn_mypage">마이페이지</button>
+              <ul class="mypage_list">
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 전체 카테고리 -->
+      <div id="hd_category">
+        <div class="category__inner">
+          <ul class="category">
+            <!-- TODO : 선택된 li에 active 클래스 추가 -->
+            <li>학교</li>
+            <li>온라인학교</li>
+            <li>단기활동</li>
+            <li>온라인 단기활동</li>
+            <li>매거진</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="claim__inner step3">
+          <div class="claim__header">
+            <h3>Claim</h3>
+            <p>OOO School</p>
+          </div>
+          <div class="claim__content">
+            <form action="" class="form_register-claim">
+              <fieldset>
+                <div class="input">
+                  <label for="name">이름<span class="asterisk"></span></label>
+                  <input type="text" id="name" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="input">
+                  <label for="email">업무이메일<span class="asterisk"></span></label>
+                  <input type="text" id="email" placeholder="업무용 이메일을 입력해 주세요">
+                </div>
+                <div class="input">
+                  <label for="tel">업무전화번호<span class="asterisk"></span></label>
+                  <div class="multiple_input">
+                    <select id="select" class="custom-select select-primary w100p">
+                      <option>국가번호를 선택해 주세요</option>
+                    </select>
+                    <input type="text" id="tel" placeholder="전화번호를 입력해 주세요">
+                  </div>
+                </div>
+                <div class="input">
+                  <label for="school_name">교육기관명<span class="asterisk"></span></label>
+                  <input type="text" id="school_name" placeholder="교육기관 이름을 입력해 주세요">
+                </div>
+                <div class="input">
+                  <label for="type">교육기관타입<span class="asterisk"></span></label>
+                  <div class="multiple_input select-type">
+                    <div class="flex" style="gap: 38px;">
+                      <div class="checkbox--typeA small">
+                        <label for='chk'>
+                          <input type='checkbox' id='chk'><em></em> 학교
+                        </label>
+                      </div>
+                      <div class="checkbox--typeA small">
+                        <label for='chk1'>
+                          <input type='checkbox' id='chk1'><em></em> 온라인 학교
+                        </label>
+                      </div>
+                      <div class="checkbox--typeA small">
+                        <label for='chk2'>
+                          <input type='checkbox' id='chk2'><em></em> 단기활동
+                        </label>
+                      </div>
+                    </div>
+                    <div class="flex" style="gap: 38px;">
+                      <div class="checkbox--typeA small">
+                        <label for='chk3'>
+                          <input type='checkbox' id='chk3'><em></em> 온라인 단기활동
+                        </label>
+                      </div>
+                      <div class="input_etc">
+                        <div class="checkbox--typeA small">
+                          <label for='chk4'>
+                            <input type='checkbox' id='chk4' onchange="etcCheck(this)"><em></em> 기타
+                          </label>
+                        </div>
+                        <input type="text" id="input_etc_type" readonly>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input">
+                  <label for="address">주소<span class="asterisk"></span></label>
+                  <input type="text" id="address" placeholder="교육기관의 주소, 우편번호를 입력해 주세요">
+                </div>
+                <div class="input">
+                  <label for="work">직무<span class="asterisk"></span></label>
+                  <input type="text" id="work" placeholder="직무를 입력해 주세요">
+                </div>
+                <div class="input">
+                  <label for="etc">전달사항<span class="asterisk"></span></label>
+                  <textarea class="textarea--typeA" id="etc" placeholder="전달사항을 입력해 주세요"></textarea>
+                </div>
+                <div class="btn_area mt60">
+                  <a href="./claim_step2.html" class="btn-bigType btn--light">취소</a>
+                  <a href="./claim_step4.html" class="btn-bigType">제출하기</a>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__inner">
+        <div class="ft__cmpny-info">
+          <div class="logo">
+            <img src="../img/common/logo.svg" alt="커넥티드 로고">
+          </div>
+          <button type="button" class="btn_consult"><span>전화상담 예약</span></button>
+          <div class="company-info">
+            <em>(주)비엘에프</em> | <em>대표</em> 박보미<br>
+            <em>사업자등록번호</em> 442-81-01686 | <em>통신판매업신고</em> 제2020-경기하남-2190호<br>
+            <em>주소</em> 경기도 하남시 미사대로 550 711호<br>
+            <em>호스팅 사업자</em> Amazon Web Service (AWS)<br>
+          </div>
+          <div class="tel">
+            <em>대표번호</em> 031-8027-7611~3 (토요일, 공휴일 휴무)<br>
+            오전 9시30분 - 오후 5시30분<br>
+            매달 마지막 금요일은 오후 3시30분까지
+          </div>
+          <p class="copyright">copyright 2023 Connect.ED. All rights Reserved</p>
+        </div>
+        <div class="ft__menu">
+          <div class="ft__gnb">
+            <dl class="menu">
+              <dt>커넥티드</dt>
+              <dd>커넥티드 메인</dd>
+              <dd>커넥티드 파트너스</dd>
+            </dl>
+            <dl class="menu">
+              <dt>해외교육</dt>
+              <dd>맞춤 유학 찾기</dd>
+              <dd>학교</dd>
+              <dd>온라인 스쿨</dd>
+              <dd>단기활동</dd>
+            </dl>
+            <dl class="menu">
+              <dt>고객센터</dt>
+              <dd>자주묻는질문</dd>
+              <dd>공지사항</dd>
+              <dd>전화상담 예약</dd>
+            </dl>
+            <div class="setting-lang">
+              <span class="current">KOR</span>
+              <button type="button" class="btn_open"></button>
+              <ul class="lang_list">
+                <li>KOR</li>
+                <li>ENG</li>
+                <li>CN</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft__sns">
+            <ul>
+              <li><a href="#" class="sns_blog"></a></li>
+              <li><a href="#" class="sns_facebook"></a></li>
+              <li><a href="#" class="sns_insta"></a></li>
+            </ul>
+            <div class="terms-use">
+              <button type="button">이용약관</button>
+              <button type="button">개인정보보호정책</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function etcCheck(e) {
+      if(e.checked) {
+        $('#input_etc_type').attr('readonly', false)
+        $('#input_etc_type').focus()
+      } else {
+        $('#input_etc_type').attr('readonly', true)
+      }
+    }
+  </script>
+</body>
+
+</html>

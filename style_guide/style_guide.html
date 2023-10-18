@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>커넥티드 스타일 가이드</title>
+  <link rel="icon" href="../img/common/logo_icon.svg">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="/css/common2.css">
+  <script src="/js/common.js" defer></script>
+  <style>
+    .container {
+      padding: 10px 0;
+    }
+
+    .container>div {
+      margin: 20px 0;
+    }
+
+    h2 {
+      margin-bottom: 23px;
+      font-size: 30px;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      color: var(--color-main);
+    }
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    .modal_exampleA .modal__inner,
+    .modal_exampleB .modal__inner {
+      max-width: 400px;
+      padding: 24px 32px;
+    }
+
+    .modal__content {
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="band-banner">
+        <div class="banner" style="background-color: #0A0A0A;">
+          <div class="banner_box">
+            <img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+            <button type="button" class="btn_close"></button>
+          </div>
+        </div>
+        <!-- <div class="banner" style="background-color: #0A0A0A;">
+                <div class="banner_box">
+                  <img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+                  <button type="button" class="btn_close"></button>
+                </div>
+              </div> -->
+      </div>
+      <div class="header__inner">
+        <div class="hd__top">
+          <div class="hd-search">
+            <a href="/" class="logo">
+              <img src="../img/common/logo.svg" alt="커넥티드 로고">
+            </a>
+            <form action="" class="form_hd-search">
+              <fieldset>
+                <div class="search">
+                  <input type="text" placeholder="검색어를 입력하세요.">
+                  <button type="button" class="btn_search"></button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="hd-language">
+            <ul class="hd-navigation">
+              <li>
+                <div class="setting-lang">
+                  <span class="current">KOR</span>
+                  <button type="button" class="btn_open"></button>
+                  <ul class="lang_list">
+                    <li>KOR</li>
+                    <li>ENG</li>
+                    <li>CN</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd__bottom">
+          <div class="hd_category_gnb">
+            <div class="category">
+              <div class="category_icon">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>전체 카테고리</p>
+              <button type="button" class="btn_open"></button>
+            </div>
+            <nav id="gnb">
+              <ul>
+                <li><a href="#">학교</a></li>
+                <li><a href="#">온라인학교</a></li>
+                <li><a href="#">단기활동</a></li>
+                <li><a href="#">온라인 단기활동</a></li>
+                <li><a href="#">매거진</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hd_login">
+            <!-- 비로그인 환경 -->
+            <!-- <a href="#" class="btn_login">로그인</a>
+            <a href="#" class="btn-smType btn-round btn_signup">회원가입</a> -->
+            <!-- 로그인 환경 -->
+            <a href="#" class="btn_logout">로그아웃</a>
+            <div class="hd_mypage">
+              <button type="button" class="btn-smType btn-round btn_mypage">마이페이지</button>
+              <ul class="mypage_list">
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 전체 카테고리 -->
+      <div id="hd_category">
+        <div class="category__inner">
+          <ul class="category">
+            <!-- TODO : 선택된 li에 active 클래스 추가 -->
+            <li>학교</li>
+            <li>온라인학교</li>
+            <li>단기활동</li>
+            <li>온라인 단기활동</li>
+            <li>매거진</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div>
+          <h2>Form</h2>
+          <div class="mb10">
+            <h3>Input</h3>
+            <input type="text" placeholder="placeholder">
+            <!-- active 클래스 추가하여 노출 -->
+            <p class="err-text active">이메일 형식이 올바르지 않습니다.</p>
+          </div>
+          <div class="mb20">
+            <h3>Checkbox & Radio</h3>
+            <div class="ml20">
+              <h4>✔️Checkbox - TypeA</h4>
+              <div class="mb20">
+                <div class="checkbox--typeA mb10">
+                  <label for='chk'>
+                    <input type='checkbox' id='chk'><em></em> 커스텀 체크박스
+                  </label>
+                </div>
+                <div class="checkbox--typeA mb10">
+                  <label for='chk1'>
+                    <input type='checkbox' id='chk1' checked><em></em> 체크된 체크박스
+                  </label>
+                </div>
+                <div class="checkbox--typeA mb10">
+                  <label for='chk2'>
+                    <input type='checkbox' id='chk2' disabled><em></em> Disabled 체크박스
+                  </label>
+                </div>
+              </div>
+              
+              
+              <h4>✔️Checkbox - TypeB</h4>
+              <div class="mb20">
+                <div class="checkbox--typeB mb10">
+                  <label for='chk3'>
+                    <input type='checkbox' id='chk3'><em></em> 커스텀 체크박스
+                  </label>
+                </div>
+                <div class="checkbox--typeB mb10">
+                  <label for='chk4'>
+                    <input type='checkbox' id='chk4' checked><em></em> 체크된 체크박스
+                  </label>
+                </div>
+              </div>
+              
+              <h4>✔️Radio (서비스 플랜)</h4>
+              <div class="mb20">
+                <div class="radio--typeA mb10">
+                  <label for="chk5">
+                    <input type="radio" id="chk5" name="service_plan" checked><em>베이직</em>
+                  </label>
+                </div>
+                <div class="radio--typeA mb10">
+                  <label for="chk6">
+                    <input type="radio" id="chk6" name="service_plan"><em>프리미엄</em>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>SelectBox</h3>
+          <div class="ml20 mb20">
+            <select id="select" class="custom-select select-primary w200">
+              <option value="010">셀렉트 옵션1</option>
+              <option value="011">셀렉트 옵션2</option>
+            </select>
+          </div>
+          <h3>TextArea</h3>
+          <div class="ml20">
+            <textarea class="textarea--typeA"></textarea>
+          </div>
+        </div>
+        <div>
+          <h2>Modal</h2>
+          <button type="button" class="btn-smType btn-round" onclick="openModal('modal-exampleA')">모달타입A</button>
+          <button type="button" class="btn-smType btn-round" onclick="openModal('modal-exampleB')">모달타입B</button>
+        </div>
+        <div>
+          <h2>Button</h2>
+          <button type="button" class="btn-smType">버튼타입A</button>
+          <button type="button" class="btn-smType btn-round">둥근버튼</button>
+          <button type="button" class="btn-bigType">로그인</button>
+          <button type="button" class="btn-bigType btn--light">로그인</button>
+          <button type="button" class="btn-miniType btn--purple">보라버튼</button>
+          <button type="button" class="btn-miniType btn--gray">회색버튼</button>
+          <button type="button" class="btn-textType">텍스트버튼</button>
+        </div>
+        <!-- 
+        <div>
+          <h2>Badge</h2>
+        </div>
+        <div>
+          <h2>Card</h2>
+        </div> -->
+      </div>
+    </main>
+    <footer>
+      <div class="footer__inner">
+        <div class="ft__cmpny-info">
+          <div class="logo">
+            <img src="../img/common/logo.svg" alt="커넥티드 로고">
+          </div>
+          <button type="button" class="btn_consult"><span>전화상담 예약</span></button>
+          <div class="company-info">
+            <em>(주)비엘에프</em> | <em>대표</em> 박보미<br>
+            <em>사업자등록번호</em> 442-81-01686 | <em>통신판매업신고</em> 제2020-경기하남-2190호<br>
+            <em>주소</em> 경기도 하남시 미사대로 550 711호<br>
+            <em>호스팅 사업자</em> Amazon Web Service (AWS)<br>
+          </div>
+          <div class="tel">
+            <em>대표번호</em> 031-8027-7611~3 (토요일, 공휴일 휴무)<br>
+            오전 9시30분 - 오후 5시30분<br>
+            매달 마지막 금요일은 오후 3시30분까지
+          </div>
+          <p class="copyright">copyright 2023 Connect.ED. All rights Reserved</p>
+        </div>
+        <div class="ft__menu">
+          <div class="ft__gnb">
+            <dl class="menu">
+              <dt>커넥티드</dt>
+              <dd>커넥티드 메인</dd>
+              <dd>커넥티드 파트너스</dd>
+            </dl>
+            <dl class="menu">
+              <dt>해외교육</dt>
+              <dd>맞춤 유학 찾기</dd>
+              <dd>학교</dd>
+              <dd>온라인 스쿨</dd>
+              <dd>단기활동</dd>
+            </dl>
+            <dl class="menu">
+              <dt>고객센터</dt>
+              <dd>자주묻는질문</dd>
+              <dd>공지사항</dd>
+              <dd>전화상담 예약</dd>
+            </dl>
+            <div class="setting-lang">
+              <span class="current">KOR</span>
+              <button type="button" class="btn_open"></button>
+              <ul class="lang_list">
+                <li>KOR</li>
+                <li>ENG</li>
+                <li>CN</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft__sns">
+            <ul>
+              <li><a href="#" class="sns_blog"></a></li>
+              <li><a href="#" class="sns_facebook"></a></li>
+              <li><a href="#" class="sns_insta"></a></li>
+            </ul>
+            <div class="terms-use">
+              <button type="button">이용약관</button>
+              <button type="button">개인정보보호정책</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- 모달 타입 A 시작 -->
+  <div id="modal-exampleA" class="modal modal_exampleA">
+    <div class="modal__inner">
+      <div class="modal__content">
+        <p>
+          헤더 없는 모달<br>
+          콘텐츠만 있는 모달<br>
+          하단 버튼영역이 있는 모달
+        </p>
+      </div>
+      <div class="modal__btn mt20">
+        <button type="button" class="btn-modal btn_cancel" onclick="closeModal('modal-exampleA')">취소</button>
+        <button type="button" class="btn-modal btn_confirm">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 모달 타입 A 끝 -->
+  <!-- 모달 타입 B 시작 -->
+  <div id="modal-exampleB" class="modal modal_exampleB">
+    <div class="modal__inner">
+      <div class="modal__close">
+        <button type="button" class="btn_modal-close" onclick="closeModal('modal-exampleB')"></button>
+      </div>
+      <div class="modal__header">
+        <p>모달 헤더</p>
+      </div>
+      <div class="modal__content">
+        <p>
+          헤더가 있는 모달<br>
+          하단 버튼영역이 있는 모달<br>
+          상단 우측에 닫기 버튼이 있는 모달
+        </p>
+      </div>
+      <div class="modal__btn mt20">
+        <button type="button" class="btn-modal btn_cancel" onclick="closeModal('modal-exampleB')">취소</button>
+        <button type="button" class="btn-modal btn_confirm">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 모달 타입 B 끝 -->
+</body>
+</html>

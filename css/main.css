@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.main__container { width: 100%; max-width: 100%; margin: 0 auto; } 
+/* 메인 배너 */
+.main-bn__swiper { border-bottom: 1px solid #CFCFCF; } 
+.main-bn__swiper .swiper-slide .img__inner { max-width: 1140px; margin: 0 auto; } 
+.main-bn__swiper .swiper-button-prev { left: calc(50% - 600px); width: 36px; height: 36px; background: url(../img/main/main_slider_prev.svg) no-repeat center center / contain; } 
+.main-bn__swiper .swiper-button-prev:after { content: none; } 
+.main-bn__swiper .swiper-button-next { right: calc(50% - 600px); width: 36px; height: 36px; background: url(../img/main/main_slider_next.svg) no-repeat center center / contain; } 
+.main-bn__swiper .swiper-button-next:after { content: none; } 
+.main-bn__swiper .swiper-button-play { position: absolute; bottom: 51px; right: calc(50% - 500px); z-index: 1000; display: flex; align-items: center; gap: 4px; } 
+.main-bn__swiper .btn-swiper_play { display: inline-block; width: 22px; height: 22px; background: url(../img/main/icon_play.svg) no-repeat center center / contain; } 
+.main-bn__swiper .btn-swiper_pause { display: inline-block; width: 22px; height: 22px; background: url(../img/main/icon_pause.svg) no-repeat center center / contain; } 
+.main-bn__swiper .swiper-pagination { position: absolute; bottom: 51px; right: calc(50% - 570px); padding: 0 21px; z-index: 1000; left: auto; display: inline-block; width: auto; height: 22px; line-height: 22px; border-radius: 50px; background-color: rgba(0, 0, 0, 0.60); font-size: 14px; font-weight: 700; color: #fff; } 
+.main-bn__swiper .swiper-pagination .current { color: var(--color-main-over); } 
+
+/* 모달 배너 */
+.modal.modal_banner {
+  display: block;
+}
+
+.modal.modal_banner .modal__inner {
+  max-width: 420px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.modal.modal_banner .modal__content {
+  height: 400px;
+}
+
+.modal.modal_banner .modal__btn {
+  gap: 0px;
+  border-top: 1px solid #F5F5F5;
+}
+
+.modal.modal_banner .btn-modal {
+  border-radius: 0px;
+  height: 39px;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal.modal_banner .modal__btn .btn-modal:first-child {
+  border-right: 1px solid #F5F5F5;
+}
+
+.modal-bn__swiper,
+.modal-bn__swiper .img__inner {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-bn__swiper .img__inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-bn__swiper .swiper-pagination {
+  position: absolute;
+  bottom: auto;
+  top: 24px;
+  right: 24px;
+  padding: 0 21px;
+  z-index: 1000;
+  left: auto;
+  display: inline-block;
+  width: auto;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.60);
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.modal-bn__swiper .swiper-pagination .current {
+  color: var(--color-main-over);
+}
+
+.modal-bn__swiper .swiper-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  text-align: center;
+}
+
+.modal-bn__swiper .swiper-dots .swiper-pagination-bullet {
+  margin: 0 6px;
+  background-color: #D9D9D9;
+  opacity: 1;
+}
+
+.modal-bn__swiper .swiper-dots .swiper-pagination-bullet-active {
+  background-color: var(--color-black);
+}

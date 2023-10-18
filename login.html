@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>커넥티드</title>
+  <link rel="icon" href="./img/common/logo_icon.svg">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="/css/common2.css">
+  <script src="/js/common.js" defer></script>
+</head>
+
+<body>
+  <!-- 헤더와 푸터가 없는 레이아웃은 #wrap에 no_layout 클래스 추가 -->
+  <div id="wrap" class="no_layout">
+    <main>
+      <div class="login_container">
+        <div class="login__inner">
+          <div class="login__header">
+            <img src="./img/common/logo_icon.svg" alt="커넥티드 로고">
+            <h1>로그인</h1>
+            <h3><b>개인맞춤</b> 해외교육 매칭 솔루션!<br> 커넥티드에 오신걸 환영합니다.</h3>
+          </div>
+          <div class="login__sns">
+            <p class="tit-space">SNS로 로그인하기</p>
+            <ul class="sns_list">
+              <li><a href="#" class="login_kakao"></a></li>
+              <li><a href="#" class="login_naver"></a></li>
+              <li><a href="#" class="login_facebook"></a></li>
+            </ul>
+          </div>
+          <div class="login__email">
+            <p class="tit-space">이메일로 로그인하기</p>
+            <form action="" class="form_login">
+              <fieldset>
+                <div class="input">
+                  <input type="text" placeholder="이메일주소를 입력해주세요">
+                  <!-- TODO : active 클래스 추가하여 노출 -->
+                  <p class="err-text active">이메일 형식이 올바르지 않습니다.</p>
+                </div>
+                <div class="input">
+                  <div class="input_password">
+                    <input type="password" placeholder="비밀번호를 입력해주세요">
+                    <button type="button" class="btn_eye hide"></button>
+                  </div>
+                  <!-- TODO : active 클래스 추가하여 노출 -->
+                  <p class="err-text">비밀번호를 입력해주세요.</p>
+                </div>
+                <div class="find-pw">
+                  <button type="button" class="btn-textType" onclick="openModal('modal-find-pw')">비밀번호 찾기</button>
+                </div>
+                <button type="button" class="btn-bigType btn_login">로그인</button>
+              </fieldset>
+            </form>
+            <div class="suggest_signup">
+              <p>아직 커넥티드 계정이 없으신가요? <a href="#" class="btn-textType btn_signup">계정 만들기</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- 비밀번호 찾기 모달 시작 -->
+  <div id="modal-find-pw" class="modal modal_find_pw">
+    <div class="modal__inner">
+      <div class="modal__close">
+        <button type="button" class="btn_modal-close" onclick="closeModal('modal-find-pw')"></button>
+      </div>
+      <div class="modal__header">
+        <p>비밀번호 찾기</p>
+      </div>
+      <form action="" class="form_find-email">
+        <fieldset>
+          <div class="modal__content">
+            <p class="find-pw_info">가입하신 이메일로 비밀번호를 재설정할 수 있는 링크를 발송합니다.</p>
+            <div class="input">
+              <input type="text" placeholder="이메일주소를 입력해 주세요">
+              <!-- TODO : active 클래스 추가하여 노출 -->
+              <p class="err-text active">이메일 형식이 올바르지 않습니다.</p>
+            </div>
+            <div class="find_sns">
+              <p>*SNS계정으로 가입하신 회원의 경우 해당 SNS사이트에서<br>
+              비밀번호찾기를 해주시기 바랍니다.</p>
+            </div>
+          </div>
+          <div class="modal__btn column mt40">
+            <button type="button" class="btn-modal btn_confirm">비밀번호 재설정</button>
+            <button type="button" class="btn-modal btn_cancel" onclick="closeModal('modal-find-pw')">취소</button>
+          </div>
+        </fieldset>
+      </form>
+      
+    </div>
+  </div>
+  <!-- 비밀번호 찾기 모달 끝 -->
+  <script>
+    $('.input_password .btn_eye').click(function() {
+      // 비번 보기
+      if($(this).hasClass('hide')) {
+        $(this).siblings().prop("type", "text");
+        $(this).removeClass('hide')
+      } else {
+        $(this).siblings().prop("type", "password");
+        $(this).addClass('hide')
+      }
+    })
+  </script>
+</body>
+
+</html>

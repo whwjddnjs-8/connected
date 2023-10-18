@@ -1,0 +1,289 @@
+/* #### 클레임 #### */
+/* common */
+.claim__inner {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.claim__header {
+  text-align: center;
+}
+
+.claim__header h3 {
+  margin-top: 24px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+  margin-bottom: 6px;
+}
+
+.claim__header p {
+  font-size: 18px;
+  line-height: 38px;
+}
+
+/* step1 */
+.claim-search__wrap {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.search__content {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #F0F0F0;
+}
+
+.search__content .search-box {
+  position: relative;
+}
+
+.search-box input[type=text] {
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  padding-left: 42px;
+  padding-right: 16px;
+  background: url(../img/common/icon_search.svg) no-repeat center left 10px / 20px 20px;
+}
+
+.search-box .btn_clear {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: url(../img/common/icon_clear.svg) no-repeat center center / contain;
+  z-index: 999;
+  display: none;
+}
+
+.search__content .results_options {
+  display: none;
+  border-top: 1px solid #F0F0F0;
+  max-height: 166px;
+  overflow-y: auto;
+  padding: 16px 14px;
+}
+
+.results_options li {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.results_options li:last-child {
+  margin-bottom: 0px;
+}
+
+.search__content .results_options.active {
+  display: block;
+}
+
+.search__content .results_options::-webkit-scrollbar {
+  width: 20px;
+}
+
+.search__content .results_options::-webkit-scrollbar-thumb {
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 8px solid transparent; 
+}
+
+.search__content .results_options::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.directly_input {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.directly_input p .btn-textType {
+  color: var(--color-main-over);
+  padding-left: 9px;
+  font-weight: 500;
+}
+
+.directly_input-box {
+  margin-top: 20px;
+  display: none;
+}
+
+/* step2 */
+.claim__inner.step2 .claim__content {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.select_faculty {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.select_faculty>.btn_select {
+  display: inline-block;
+  width: 100%;
+  line-height: 58px;
+  height: 58px;
+  background-color: var(--color-soft-yellow);
+  color: var(--color-main);
+  border-radius: 8px;
+  text-align: left;
+  padding: 0 20px;
+  transition: 0.35s;
+  position: relative;
+}
+
+.select_faculty>.btn_select:after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  background: url(../img/common/icon_faculty_arrow.svg) no-repeat center center / contain;
+}
+
+.select_faculty>.btn_select:hover {
+  background-color: var(--color-main);
+  color: var(--color-soft-yellow);
+}
+
+.select_faculty>.btn_select:hover:after {
+  background: url(../img/common/icon_faculty_arrow_on.svg) no-repeat center center / contain;
+}
+
+/* step3 */
+.claim__inner.step3 {
+  max-width: 628px;
+}
+
+.claim__inner.step3 .claim__header {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #F0F0F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.claim__inner.step3 .claim__header h3 {
+  line-height: 20px;
+  margin: 0;
+}
+
+.claim__inner.step3 .claim__header p {
+  line-height: 14px;
+  color: var(--color-gray04);
+  font-size: 14px;
+}
+
+.form_register-claim {
+  margin-top: 30px;
+}
+
+.form_register-claim .input {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.form_register-claim .input > label {
+  min-width: 140px;
+  padding-top: 11px;
+  font-size: 14px;
+}
+
+.form_register-claim .input input {
+  max-width: 100%;
+}
+
+.form_register-claim input::placeholder{
+  font-size: 14px;
+}
+
+.form_register-claim .multiple_input {
+  width: 100%;
+}
+
+.form_register-claim .select-primary span.current {
+  color: var(--color-gray03);
+}
+.form_register-claim .multiple_input>*{
+  margin-bottom: 18px;
+}
+
+.form_register-claim .multiple_input>*:last-child {
+  margin-bottom: 0;
+}
+
+.form_register-claim .textarea--typeA {
+  border: 1px solid var(--color-gray02);
+}
+
+.form_register-claim .checkbox--typeA {
+  font-size: 14px;
+  min-width: 60px;
+}
+
+.multiple_input.select-type .flex {
+  height: 48px;
+  line-height: 48px;
+}
+
+.input_etc {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.input_etc input {
+  max-width: 262px !important;
+}
+
+.input_etc input:disabled,
+.input_etc input:read-only {
+  background-color: var(--color-gray02);
+}
+
+
+/* step4 */
+.claim__inner.step4 .select_school-name {
+  margin-top: 32px;
+  line-height: 14px;
+}
+
+.claim__inner.step4 .claim__header h3 {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.claim__inner.step4 .complete_txt {
+  color: var(--color-main);
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.claim__inner.step4 .btn_main {
+  background-color: var(--color-gray02);
+  color: var(--color-gray04);
+}
