@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/css/common2.css">
   <script src="/js/common.js" defer></script>
 </head>
+
 <body>
   <div id="wrap">
     <header>
@@ -149,6 +150,7 @@
           <div class="swiper-pagination"></div>
         </div>
         <div class="container">
+          <!-- 메인 카테고리 -->
           <div class="swiper main-category__swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -226,6 +228,82 @@
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+          </div>
+          <!-- 슬라이드 영역 -->
+          <div class="main-slide__area">
+            <!-- 슬라이드 -->
+            <div class="main-slide">
+              <div class="slide_title">
+                <div class="title">
+                  <h2>🍂 가을·겨울 영어캠프 ❄️</h2>
+                  <span class="title_badge">지금 지원하세요!!</span>
+                </div>
+                <a href="#" class="btn_show_all">전체보기</a>
+              </div>
+              <div class="slide_content">
+                <!-- school-item__swiper : 공통 클래스 (리스트 페이지에서도 쓰임) -->
+                <div class="swiper main-slide__swiper school-item__swiper swiper__01">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners">PARTNERS</span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum01.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge pink">마감임박</span>
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">뉴질랜드 오클랜드</span>
+                              </p>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <p class="price">NZD - $ 2,000</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2"
+                                      id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000</p>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -348,7 +426,7 @@
     });
 
     /* 메인배너 재생, 정지 버튼 클릭이벤트 */
-    $('.btn-swiper_play').click(function() {
+    $('.btn-swiper_play').click(function () {
       main_banner_swiper.autoplay.start();
     })
     $('.btn-swiper_pause').click(function () {
@@ -369,11 +447,11 @@
     });
 
     var modal_banner_paging = new Swiper(".modal-bn__swiper", {
-        pagination: {
-          el: ".swiper-dots",
-          clickable: true,
-        },
-      });
+      pagination: {
+        el: ".swiper-dots",
+        clickable: true,
+      },
+    });
 
     modal_banner_swiper.controller.control = modal_banner_paging;
 
@@ -386,6 +464,26 @@
         prevEl: ".swiper-button-prev",
       },
     });
+
+    /* 메인 슬라이드 스와이퍼 01 */
+    var main_category_swiper = new Swiper(".main-slide__swiper", {
+      spaceBetween: 34,
+      slidesPerView: 4,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    function clickLikeBtn(event) {
+      let checked = event.checked;
+      if(checked) {
+        $('.front_like_at').addClass('active')
+      } else {
+        $('.front_like_at').removeClass('active')
+      }
+    }
   </script>
 </body>
+
 </html>
