@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.mypage__inner {
+	margin-top: 80px;
+}
+.mypage__header {
+	padding-bottom: 26px;
+	border-bottom: 4px solid #0A0A0A;
+}

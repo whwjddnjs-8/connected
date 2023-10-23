@@ -47,9 +47,10 @@ header { position: fixed; top: 0; left: 0; width: 100%; height: auto; z-index: 1
 .category .category_icon.active~.btn_open { background: url(../img/common/icon_open_active.svg) no-repeat center center / contain; } 
 .hd_category_gnb .category>p { cursor: pointer; font-weight: 500; margin-left: 3px; } 
 .hd_category_gnb nav#gnb ul { display: flex; align-items: center; gap: 24px; } 
-.hd_category_gnb nav#gnb ul li { position: relative; } 
+.hd_category_gnb nav#gnb ul li { position: relative; transition: 0.2s; } 
 .hd_category_gnb nav#gnb ul li:after { content: ''; display: inline-block; width: 130%; height: 2px; background-color: var(--color-main); position: absolute; bottom: -23px; left: 50%; transform: translateX(-50%); opacity: 0; transition: 0.25s; } 
 .hd_category_gnb nav#gnb ul li:hover:after { opacity: 1; } 
+.hd_category_gnb nav#gnb ul li:hover {color: var(--color-main);}
 .hd_category_gnb nav#gnb ul li a { font-weight: 500; } 
 .hd_login { display: flex; align-items: center; gap: 16px; } 
 .hd_login .btn_login,
@@ -116,3 +117,19 @@ footer { width: 100%; position: absolute; left: 0; bottom: -413px; height: 413px
 .ft__menu .ft__sns ul li>a.sns_insta { background: url(../img/common/icon_insta.svg) no-repeat center center / contain; } 
 .ft__menu .terms-use { display: flex; gap: 8px; align-items: center; justify-content: flex-end; margin-top: 24px; } 
 .ft__menu .terms-use>* { display: inline-block; width: 111px; height: 40px; line-height: 40px; background-color: #fff; border: 1px solid var(--color-gray02); border-radius: 8px; text-align: center; font-size: 12px; font-weight: 500; color: #707070; } 
+
+/* 상담 플로트 메뉴 */
+.float_consult {
+  position: fixed;
+  right: 33px;
+  bottom: 70px;
+}
+
+.float_consult .btn_consult {
+  border: none;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background: url(../img/common/btn_consult.png) no-repeat center center / contain;
+  z-index: 1000;
+}

@@ -158,7 +158,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex01.png" alt="카테고리 이미지">
                   </div>
-                  <p>#명문보딩스쿨</p>
+                  <p><span>#명문보딩스쿨</span></p>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -166,7 +166,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex02.png" alt="카테고리 이미지">
                   </div>
-                  <p>#영어캠프</p>
+                  <p><span>#영어캠프</span></p>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -174,7 +174,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex03.png" alt="카테고리 이미지">
                   </div>
-                  <p>#해외 스쿨링</p>
+                  <p><span>#해외 스쿨링</span></p>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -182,7 +182,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex04.png" alt="카테고리 이미지">
                   </div>
-                  <p>#경시대회 정보</p>
+                  <p><span>#경시대회 정보</span></p>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -190,7 +190,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex05.png" alt="카테고리 이미지">
                   </div>
-                  <p>#AP심화과목</p>
+                  <p><span>#AP심화과목</span></p>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -198,7 +198,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex06.png" alt="카테고리 이미지">
                   </div>
-                  <p>#보딩스쿨 캠프</p>
+                  <p><span>#보딩스쿨 캠프</span></p>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -206,7 +206,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex07.png" alt="카테고리 이미지">
                   </div>
-                  <p>#온라인 스쿨</p>
+                  <p><span>#온라인 스쿨</span></p>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -214,7 +214,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex08.png" alt="카테고리 이미지">
                   </div>
-                  <p>#클럽활동</p>
+                  <p><span>#클럽활동</span></p>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -222,7 +222,7 @@
                   <div class="thum">
                     <img src="./img/main/navi_ex01.png" alt="카테고리 이미지">
                   </div>
-                  <p>#클럽활동</p>
+                  <p><span>#클럽활동</span></p>
                 </a>
               </div>
             </div>
@@ -242,15 +242,16 @@
               </div>
               <div class="slide_content">
                 <!-- school-item__swiper : 공통 클래스 (리스트 페이지에서도 쓰임) -->
-                <div class="swiper main-slide__swiper school-item__swiper swiper__01">
+                <div class="swiper main-slide__swiper school-item__swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="school-card-item">
                         <div class="content">
                           <div class="card_front">
                             <div class="thum">
+                              <!-- TODO : 좋아요 눌린상태라면 active 클래스 추가 -->
                               <span class="front_like_at"></span>
-                              <span class="partners">PARTNERS</span>
+                              <span class="partners"></span>
                               <em class="grade">A+</em>
                               <img src="./img/item_thum01.png" alt="썸네일 이미지">
                               <div class="badge_list">
@@ -266,10 +267,11 @@
                                 <span class="loc">뉴질랜드 오클랜드</span>
                               </p>
                               <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
-                              <p class="price">NZD - $ 2,000</p>
+                              <p class="price">NZD - $ 2,000 ~</p>
                             </div>
                           </div>
                           <div class="card_back">
+                            <!-- 좋아요 버튼 -->
                             <div class="btn_like_box">
                               <input type="checkbox" id="btn_like" onchange="clickLikeBtn(this)" />
                               <label for="btn_like">
@@ -284,12 +286,247 @@
                                 </svg>
                               </label>
                             </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
                             <div class="back_title">
                               <span class="loc">뉴질랜드 오클랜드</span>
                               <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
                               <span class="hashtag">#기숙 #통학</span>
                             </div>
-                            <p class="price">NZD - $ 2,000</p>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum02.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge pink">마감임박</span>
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">호주 퀸즐랜드</span>
+                              </p>
+                              <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                              2023</h3>
+                              <p class="price">NZD - $ 2,000 ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like1" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like1">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum03.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">베트남 Da Nang</span>
+                              </p>
+                              <h3 class="title">베트남 다낭 영어캠프</h3>
+                              <p class="price">NZD - $ 2,000 ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like2" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like2">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum04.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge pink">마감임박</span>
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">인도네시아 Lesser Sunda Island</span>
+                              </p>
+                              <h3 class="title">발리 Global English Camp</h3>
+                              <p class="price">NZD - $ 2,000 ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like3" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like3">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum04.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge pink">마감임박</span>
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">인도네시아 Lesser Sunda Island</span>
+                              </p>
+                              <h3 class="title">발리 Global English Camp</h3>
+                              <p class="price">NZD - $ 2,000 ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like4" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like4">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
                             <div class="back_end">
                               <span class="name">JEC CAMP</span>
                               <small>교육기관이 직접 제공한 데이터입니다</small>
@@ -304,6 +541,563 @@
                 </div>
               </div>
             </div>
+            <!-- 슬라이드 -->
+            <div class="main-slide">
+              <div class="slide_title">
+                <div class="title">
+                  <h2>🎓 미국 추천 명문보딩스쿨</h2>
+                  <span class="title_badge yellow">미국 TOP50 내의 명문보딩스쿨 추천</span>
+                </div>
+                <a href="#" class="btn_show_all">전체보기</a>
+              </div>
+              <div class="slide_content">
+                <!-- school-item__swiper : 공통 클래스 (리스트 페이지에서도 쓰임) -->
+                <div class="swiper main-slide__swiper school-item__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum05.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge pink">마감임박</span>
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">미국 뉴 저지</span>
+                              </p>
+                              <h3 class="title">Blair Academy</h3>
+                              <p class="price">900 USD/Credit ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like5" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like5">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum06.png" alt="썸네일 이미지">
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">미국 메사추세츠</span>
+                              </p>
+                              <h3 class="title">Deerfield Academy</h3>
+                              <p class="price">900 USD/Credit ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like6" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like6">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum07.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">미국 코네티컷</span>
+                              </p>
+                              <h3 class="title">Choate Rosemary Hall</h3>
+                              <p class="price">900 USD/Credit ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like7" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like7">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum08.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge pink">마감임박</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">미국 뉴 햄프셔</span>
+                              </p>
+                              <h3 class="title">Phillips Exeter Academy</h3>
+                              <p class="price">900 USD/Credit ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like8" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like8">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+            <!-- 슬라이드 -->
+            <div class="main-slide">
+              <div class="slide_title">
+                <div class="title">
+                  <h2>🏫 가성비 좋은 사립학교 추천</h2>
+                  <span class="title_badge pink">연 $25,000 이하로 해외 교육을 받아보세요!</span>
+                </div>
+                <a href="#" class="btn_show_all">전체보기</a>
+              </div>
+              <div class="slide_content">
+                <!-- school-item__swiper : 공통 클래스 (리스트 페이지에서도 쓰임) -->
+                <div class="swiper main-slide__swiper school-item__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum05.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge pink">마감임박</span>
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">미국 뉴 저지</span>
+                              </p>
+                              <h3 class="title">Blair Academy</h3>
+                              <p class="price">900 USD/Credit ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like9" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like9">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum06.png" alt="썸네일 이미지">
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">미국 메사추세츠</span>
+                              </p>
+                              <h3 class="title">Deerfield Academy</h3>
+                              <p class="price">900 USD/Credit ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like10" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like10">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum07.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge green">지원완료</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">미국 코네티컷</span>
+                              </p>
+                              <h3 class="title">Choate Rosemary Hall</h3>
+                              <p class="price">900 USD/Credit ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like11" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like11">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="school-card-item">
+                        <div class="content">
+                          <div class="card_front">
+                            <div class="thum">
+                              <span class="front_like_at"></span>
+                              <span class="partners"></span>
+                              <em class="grade">A+</em>
+                              <img src="./img/item_thum08.png" alt="썸네일 이미지">
+                              <div class="badge_list">
+                                <!-- 마감임박 : pink -->
+                                <!-- 지원완료 : green -->
+                                <span class="badge pink">마감임박</span>
+                              </div>
+                            </div>
+                            <div class="desc">
+                              <p class="star_loc">
+                                <span class="star">4.0(1,200)</span>
+                                <span class="loc">미국 뉴 햄프셔</span>
+                              </p>
+                              <h3 class="title">Phillips Exeter Academy</h3>
+                              <p class="price">900 USD/Credit ~</p>
+                            </div>
+                          </div>
+                          <div class="card_back">
+                            <div class="btn_like_box">
+                              <input type="checkbox" id="btn_like12" onchange="clickLikeBtn(this)" />
+                              <label for="btn_like12">
+                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                  <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                      stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                                  </g>
+                                </svg>
+                              </label>
+                            </div>
+                            <div class="btn_like_hover">
+                              <span>관심리스트 추가</span>
+                            </div>
+                            <div class="back_title">
+                              <span class="loc">뉴질랜드 오클랜드</span>
+                              <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                              <span class="hashtag">#기숙 #통학</span>
+                            </div>
+                            <p class="price">NZD - $ 2,000 ~</p>
+                            <em class="grade">A+</em>
+                            <span class="partners"></span>
+                            <div class="back_end">
+                              <span class="name">JEC CAMP</span>
+                              <small>교육기관이 직접 제공한 데이터입니다</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+            <!-- 슬라이드 -->
+            <div class="main-slide">
+              <div class="slide_title">
+                <div class="title">
+                  <h2>📰 교육 매거진</h2>
+                  <span class="title_badge mint">교육 전문가들의 알짜배기 교육 정보들만 모았다!</span>
+                </div>
+                <a href="#" class="btn_show_all">전체보기</a>
+              </div>
+              <div class="slide_content">
+                <!-- school-item__swiper : 공통 클래스 (리스트 페이지에서도 쓰임) -->
+                <div class="swiper magazine-slide__swiper school-item__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="magazine-card-item">
+                        <div class="content">
+                          <div class="magazine_card">
+                            <div class="thum">
+                              <img src="./img/magazine_thum01.png" alt="썸네일 이미지">
+                            </div>
+                            <div class="desc">
+                              <h3 class="title">나를 위한 해외교육 찾기, 커넥티드</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="magazine-card-item">
+                        <div class="content">
+                          <div class="magazine_card">
+                            <div class="thum">
+                              <img src="./img/magazine_thum02.png" alt="썸네일 이미지">
+                            </div>
+                            <div class="desc">
+                              <h3 class="title">나를 위한 해외교육 찾기, 커넥티드</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="magazine-card-item">
+                        <div class="content">
+                          <div class="magazine_card">
+                            <div class="thum">
+                              <img src="./img/magazine_thum03.png" alt="썸네일 이미지">
+                            </div>
+                            <div class="desc">
+                              <h3 class="title">나를 위한 해외교육 찾기, 커넥티드</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 커넥티드 서비스 -->
+          <div class="connected__service">
+            <div class="slide_title">
+              <div class="title">
+                <h2>🙌 커넥티드 서비스</h2>
+                <span class="title_badge blue">중개수수료 0원! 필요한 서비스만 콕콕찝는 똑똑한 서비스!</span>
+              </div>
+            </div>
+            <!-- 프로그램 상담, 맞춤학교 찾기, 뉴스레터 구독하기 등은 변경 X (기존 소스 유지) -->
           </div>
         </div>
       </div>
@@ -372,6 +1166,9 @@
         </div>
       </div>
     </footer>
+    <div class="float_consult">
+      <a href="#" class="btn_consult"></a>
+    </div>
   </div>
   <!-- 모달 배너 시작 -->
   <div id="modal-banner" class="modal modal_banner">
@@ -467,7 +1264,7 @@
 
     /* 메인 슬라이드 스와이퍼 01 */
     var main_category_swiper = new Swiper(".main-slide__swiper", {
-      spaceBetween: 34,
+      spaceBetween: 30,
       slidesPerView: 4,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -478,11 +1275,21 @@
     function clickLikeBtn(event) {
       let checked = event.checked;
       if(checked) {
-        $('.front_like_at').addClass('active')
+        $('#'+ event.id).parents('.card_back').siblings('.card_front').children('.thum').children('.front_like_at').addClass('active')
       } else {
-        $('.front_like_at').removeClass('active')
+        $('#' + event.id).parents('.card_back').siblings('.card_front').children('.thum').children('.front_like_at').removeClass('active')
       }
     }
+
+     /* 메인 매거진 슬라이드 스와이퍼 01 */
+    var main_category_swiper = new Swiper(".magazine-slide__swiper", {
+      spaceBetween: 30,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
 </body>
 

@@ -7,6 +7,7 @@
 @import url(./main.css);
 @import url(./login.css);
 @import url(./style2.css);
+@import url(./mypage.css);
 
 /* Button */
 .btn-miniType {
@@ -414,7 +415,7 @@ select {
   height: 348px;
 }
 
-.content {
+.school-card-item .content {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -466,6 +467,22 @@ select {
   backface-visibility: hidden;
 }
 
+.school-card-item em.grade {
+  position: absolute;
+  top: 45px;
+  right: 11px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(10, 10, 10, 0.7);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-main-over);
+  line-height: 23px;
+  border: 1px solid #fff;
+}
+
 /* card front */
 .card_front {
   border: 1px solid #F0F0F0;
@@ -474,6 +491,7 @@ select {
 
 .card_front .thum {
   position: relative;
+  height: 220px;
 }
 
 .card_front .thum .front_like_at {
@@ -492,44 +510,26 @@ select {
 
 .card_front .thum span.partners {
   display: inline-block;
-  width: 82px;
-  height: 24px;
-  line-height: 23px;
-  background-color: var(--color-purple);
-  border: 1px solid var(--color-white);
-  border-radius: 2px;
-  color: var(--color-white);
-  font-size: 13px;
-  font-weight: 500;
+  width: 26px;
+  height: 26px;
   position: absolute;
-  top: 13px;
-  left: 11px;
+  top: 78px;
+  right: 11px;
+  background: url(../img/common/icon_partners.svg) no-repeat center center / contain;
 }
 
-.card_front .thum em.grade {
-  position: absolute;
-  top: 45px;
-  right: 11px;
-  border-radius: 50%;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-color: #000;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--color-main-over);
-  line-height: 23px;
-}
+
 
 .card_front .thum>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* filter: brightness(0.9) */
 }
 
 .card_front .thum .badge_list {
   position: absolute;
-  bottom: 13px;
+  top: 14px;
   left: 11px;
   display: flex;
   align-items: center;
@@ -770,4 +770,86 @@ svg {
   100% {
     transform: scale(1);
   }
+}
+
+.card_back .btn_like_box:hover~.btn_like_hover {
+  opacity: 1;
+}
+
+.card_back .btn_like_box label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.card_back .btn_like_hover {
+  opacity: 0;
+  transition: 0.35s;
+  position: absolute;
+  top: 9px;
+  right: 50px;
+}
+
+.card_back .btn_like_hover span {
+  display: inline-block;
+  width: 98px;
+  height: 32px;
+  line-height: 32px;
+  background-color: var(--color-main-over);
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.card_back .btn_like_hover span:after {
+  content: '';
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 13px solid transparent;
+  border-left-color: var(--color-main-over);
+  position: absolute;
+  right: -19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card_back span.partners {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  bottom: 18px;
+  left: 11px;
+  background: url(../img/common/icon_partners.svg) no-repeat center center / contain;
+}
+
+.school-item__swiper {
+  padding: 0 12px;
+}
+
+.school-item__swiper .swiper-button-prev {
+  left: -2px;
+  width: 36px;
+  height: 36px;
+  background: url(../img/main/icon_swiper_prev.svg) no-repeat center center / contain;
+}
+
+.school-item__swiper .swiper-button-prev:after {
+  content: none;
+}
+
+.school-item__swiper .swiper-button-next {
+  right: -2px;
+  width: 36px;
+  height: 36px;
+  background: url(../img/main/icon_swiper_next.svg) no-repeat center center / contain;
+}
+
+.school-item__swiper .swiper-button-next:after {
+  content: none;
+}
+
+.school-item__swiper .swiper-button-disabled {
+  display: none;
 }
