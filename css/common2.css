@@ -290,10 +290,34 @@ span.asterisk {
   font-style: normal;
   background: url(../img/common/icon_checkboxB.svg) no-repeat center center / contain;
   transform: translateY(3px);
+  margin-right: 5px;
 }
 
 .checkbox--typeB input[type=checkbox]:checked+em {
   background: url(../img/common/icon_checkboxB_on.svg) no-repeat center center / contain;
+}
+
+.checkbox--typeC {
+  font-size: 16px;
+  color: var(--colro-black);
+}
+
+.checkbox--typeC input[type=checkbox] {
+  display: none;
+}
+
+.checkbox--typeC input[type=checkbox]+em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-style: normal;
+  background: url(../img/common/icon_checkboxC.svg) no-repeat center center / contain;
+  transform: translateY(3px);
+  margin-right: 5px;
+}
+
+.checkbox--typeC input[type=checkbox]:checked+em {
+  background: url(../img/common/icon_checkboxC_on.svg) no-repeat center center / contain;
 }
 
 /* Radio Button */
@@ -338,6 +362,26 @@ span.asterisk {
 
 .radio--typeA input[type=radio]:checked+em:before  {
   background: url(../img/common/icon_radio_on.svg) no-repeat center center / contain;
+}
+
+.radio--typeB input[type=radio] {
+  display: none;
+}
+
+.radio--typeB input[type=radio]+em {
+  display: inline-block;
+  width: 160px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border: 1px solid var(--color-gray02);
+  border-radius: 4px;
+  color: #8C8C8C;
+}
+
+.radio--typeB input[type=radio]:checked+em {
+  border: 1px solid var(--color-main);
+  color: var(--color-main);
 }
 
 /* Select */
@@ -403,7 +447,6 @@ select {
   border: 1px solid var(--color-gray03);
   border-radius: 4px;
   width: 100%;
-  /* max-width: 408px; */
   min-height: 96px;
   padding: 17px 14px;
   font-size: 14px;
@@ -475,11 +518,11 @@ select {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-color: rgb(10, 10, 10, 0.7);
-  font-size: 14px;
+  background-color: rgb(113, 98, 242, 0.7);
+  font-size: 13px;
   font-weight: 700;
-  color: var(--color-main-over);
-  line-height: 23px;
+  color: var(--color-white);
+  line-height: 21px;
   border: 1px solid #fff;
 }
 
@@ -518,13 +561,10 @@ select {
   background: url(../img/common/icon_partners.svg) no-repeat center center / contain;
 }
 
-
-
 .card_front .thum>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* filter: brightness(0.9) */
 }
 
 .card_front .thum .badge_list {

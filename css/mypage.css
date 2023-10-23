@@ -5,4 +5,68 @@
 .mypage__header {
 	padding-bottom: 26px;
 	border-bottom: 4px solid #0A0A0A;
+	position: relative;
+}
+
+.mypage__header h2 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.mypage__header ul.breadcrumb {
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	display: flex;
+	align-items: center;
+	gap: 31px;
+}
+
+.mypage__header ul.breadcrumb li {
+	color: var(--color-gray03);
+	position: relative;
+}
+
+.mypage__header ul.breadcrumb li:after {
+	content: '';
+	display: inline-block;
+	width: 6px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -17px;
+	background: url(../img/common/icon_breadcrumb.svg) no-repeat center center / contain;
+}
+
+.mypage__header ul.breadcrumb li:last-child:after {
+	content: none;
+}
+
+.mypage__tabmenu {
+	display: flex;
+	gap: 9px;
+}
+
+.mypage__tabmenu .left_tabmenu {
+	width: 200px;
+	min-width: 200px;
+	padding-left: 10px;
+}
+
+.mypage__tabmenu .left_tabmenu > li {
+	padding: 5px 0;
+	display: inline-block;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #8C8C8C;
+}
+
+.mypage__tabmenu .left_tabmenu>li.active {
+	font-weight: bold;
+	color: var(--color-black);
 }

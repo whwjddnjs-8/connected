@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>커넥티드</title>
+	<link rel="icon" href="../img/common/logo_icon.svg">
+	<!-- jQuery CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!-- NiceSelect -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+	<!-- Custom CSS & JS -->
+	<link rel="stylesheet" href="/css/common2.css">
+	<script src="/js/common.js" defer></script>
+</head>
+
+<body>
+	<div id="wrap" class="no_layout">
+		<main>
+			<div class="container">
+				<div class="payment__inner">
+					<div class="logo">
+						<img src="./img/common/logo_icon.svg" alt="로고 아이콘">
+					</div>
+					<div class="payment_step">
+						<ul>
+							<li>
+								<img src="./img/common/payment_step1.svg" alt="상담 아이콘">
+								<span>상담</span>
+							</li>
+							<li>
+								<img src="./img/common/payment_step2.svg" alt="상담 아이콘">
+								<span>결제</span>
+							</li>
+							<li>
+								<img src="./img/common/payment_step3.svg" alt="상담 아이콘">
+								<span>결제완료</span>
+							</li>
+						</ul>
+					</div>
+					<div class="payment__content">
+						<h2>결제하기</h2>
+						<div class="payment">
+							<h3 class="title">계정 정보</h3>
+							<div class="content">
+								<p>test@gmail.com / 홍길동</p>
+							</div>
+						</div>
+						<div class="payment">
+							<h3 class="title">서비스명</h3>
+							<div class="content">
+								<p>학교-맞춤학교 수속</p>
+							</div>
+						</div>
+						<div class="payment">
+							<h3 class="title">결제금액</h3>
+							<div class="content">
+								<div class="payment_price">
+									<div class="service">
+										<div>
+											<span>서비스 비용</span>
+											<button type="button" class="btn_question"></button>
+											<p class="service_cnts">커넥티드에서 제공하는 서비스에 대한 비용입니다. 추가서비스 희망 시 지원서 제출 후 추가요금이 발생할 수 있습니다.</p>
+										</div>
+										<p>무료</p>
+									</div>
+									<div class="total">
+										<span>총 금액</span>
+										<p>$ 80</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="payment">
+							<h3 class="title">결제 수단</h3>
+							<div class="content">
+								<form action="" class="form_select-card">
+									<fieldset>
+										<div class="select_card">
+											<ul class="select-card-info domestic active">
+												<li>국내에서 발급된 신용카드 및 체크카드 모두 사용 가능합니다.</li>
+												<li>표기된 USD금액에 실시간 환율을 적용한 KRW로 결제됩니다.</li>
+												<li>환율은 실시간 하나은행 매매기준율이 적용됩니다.</li>
+											</ul>
+											<ul class="select-card-info foreign">
+												<li>한국을 제외한 국가에서 발급된 글로벌 카드로만 결제 가능합니다.</li>
+												<li>USD로 결제'와 '자국통화로 결제' 중 선택하여 결제하실 수 있습니다.</li>
+												<li>자국통화로 결제 시 표기된 USD에 환율을 적용한 금액이 카드 발급 국가의 법정화폐로 결제됩니다.</li>
+											</ul>
+											<div class="select-card-check">
+												<div class="radio--typeB">
+													<label for="chk">
+														<input type="radio" id="chk" name="select_card" value="domestic" checked><em>국내카드</em>
+													</label>
+												</div>
+												<div class="radio--typeB">
+													<label for="chk1">
+														<input type="radio" id="chk1" name="select_card" value="foreign"><em>해외카드</em>
+													</label>
+												</div>
+											</div>
+											<div class="card_notice">
+												<h3>안내사항</h3>
+												<ul>
+													<li>커넥티드 서비스비용, 지원료, 카드수수료는 미국달러(USD) 기준으로 결제됩니다.</li>
+													<li>환불은 환불정책에 의거하여 진행됩니다.</li>
+													<li>커넥티드가 교육기관에 지원서를 제출한 후에는 결제하신 지원료를 환불받으실 수 없습니다.</li>
+													<li>단순 변심에 의한 환불은 불가합니다.</li>
+													<li>결제 후 지원서 제출까지 완료해 주셔야 서비스 신청이 완료됩니다.</li>
+												</ul>
+											</div>
+											<div class="agree_content">
+												<div class="checkbox--typeB chkAll">
+													<label for='chk-all'>
+														<input type='checkbox' id='chk-all'><em></em> 필수 약관 모두 동의
+													</label>
+												</div>
+												<ul class="agree_list">
+													<li>
+														<div class="checkbox--typeC">
+															<label for='chk_1'>
+																<input type='checkbox' id='chk_1' name="check_agree-item"><em></em> [필수] 개인정보 수집 및 이용
+															</label>
+														</div>
+														<button type="button" class="btn_show" onclick="openModal('modal-agree1')"></button>
+													</li>
+													<li>
+														<div class="checkbox--typeC">
+															<label for='chk_2'>
+																<input type='checkbox' id='chk_2' name="check_agree-item"><em></em> [필수] 개인정보 제3자 제공
+															</label>
+														</div>
+														<button type="button" class="btn_show" onclick="openModal('modal-agree2')"></button>
+													</li>
+												</ul>
+											</div>
+											<div class="payment_btn">
+												<p><a href="/terms/00001">이용약관</a>, <a href="/terms/00005">환불정책</a>에 동의하실 경우 결제하기를 클릭해 주세요.</p>
+												<button type="button" class="btn-bigType">결제하기</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- 개인정보 수집 및 이용 시작 -->
+		<div id="modal-agree1" class="modal modal_agree modal_agree1">
+			<div class="modal__inner">
+				<div class="modal__close">
+					<button type="button" class="btn_modal-close" onclick="closeModal('modal-agree1')"></button>
+				</div>
+				<div class="modal__header">
+					<p>개인정보 수집 및 이용</p>
+				</div>
+				<div class="modal__content modal-agree1_content">
+					<h5>커넥티드 개인정보 수집 및 이용</h5>
+					<p>
+						“회사"는 다음과 같이 이용자의 개인정보를 수집합니다. 처리하고 있는 개인정보는 다음의 수집 이용 목적이외의 용도로는 활용되지 않습니다. 회원 정보의 수집·이용 목적, 수집 항목, 보유·이용기간은 아래와 같습니다.
+					</p>
+					<table class="modal_table">
+						<colgroup>
+							<col style="width: 10%;">
+							<col style="width: 30%;">
+							<col style="width: 30%;">
+							<col style="width: 30%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>분류</th>
+								<th>수집·이용동의목적</th>
+								<th>항목</th>
+								<th>보관기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>필수정보</td>
+								<td>서비스 가입, 계약의 이행 및 서비스 제공, 예약·구매·결제대금의 청구, 상담·불만·민원처리, 고지·안내사항 전달, 상품·서비스 이용실적 정보 통계·분석, 상품·서비스 개선 및 추천, 불법·부정이용방지, 개인정보
+								유효기간제 준수</td>
+								<td>
+									- 서비스 이용 시: 아이디(이메일), 비밀번호, 이름, 연령대, 성별<br>
+									- 지원서 리뷰 신청 시: 학생이름, 휴대폰번호, 주소, 학부모이름, 휴대폰번호, 주소 등 지원서 작성에 필요한 개인정보<br>
+									- 추가서비스 구매 시: 여권번호, 영문명, 휴대폰번호 등 보험, 항공권 등 추가서비스 구매에 필요한 개인정보
+								</td>
+								<td>
+									- 회원 탈퇴 요청 시 상담 등 민원 처리, 정산 및 환불 처리를 위해 60일 후 삭제<br>
+									- 관계법령에 따라 보존할 필요가 있는 경우 해당 법령에서 요구하는 기한까지 보관
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- 개인정보 수집 및 이용 끝 -->
+		<!-- 개인정보 제3자 제공 시작 -->
+		<div id="modal-agree2" class="modal modal_agree modal_agree2">
+			<div class="modal__inner">
+				<div class="modal__close">
+					<button type="button" class="btn_modal-close" onclick="closeModal('modal-agree2')"></button>
+				</div>
+				<div class="modal__header">
+					<p>개인정보 제3자 제공</p>
+				</div>
+				<div class="modal__content modal-agree2_content">
+					<table class="modal_table">
+						<colgroup>
+							<col style="width: 20%;">
+							<col style="width: 80%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>제공받는자</th>
+								<td>㈜비엘에프, [뉴질랜드 스쿨링 영어캠프 2023년 가을]</td>
+							</tr>
+							<tr>
+								<th>제공 목적</th>
+								<td>
+									- 결제한 서비스의 제공 및 계약의 이행(이용자 및 이용정보 확인), 민원처리 등 소비자 분쟁해결<br>
+									- 지원자 정보 확인
+								</td>
+							</tr>
+							<tr>
+								<th>제공 항목</th>
+								<td>
+									- 지원자이름, 휴대폰번호, 주소, 학부모이름, 휴대폰번호 등 지원서 작성에 필요한 정보.<br>
+									- (추가서비스 구매시) 추가서비스 구매에 필요한 정보
+								</td>
+							</tr>
+							<tr>
+								<th>이용 및 보유기간</th>
+								<td>
+									개인정보 이용목적 달성 시까지<br>
+									단, 관계법령에 의하여 보존할 필요성이 있는 경우 그 시점까지 보존 후 지체 없이 파기
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>※ 위 개인정보 수집·이용에 대한 동의를 거부할 수 있으며, 거부할 경우 서비스 이용이 제한됩니다.</p>
+				</div>
+			</div>
+		</div>
+		<!-- 개인정보 제3자 제공 시작 -->
+	</div>
+	<script>
+		$('input[name=select_card]').change(function() {
+			var checked = $("input[name='select_card']:checked").val();
+			
+			if(checked == 'domestic') {
+				$('.select-card-info').removeClass('active')
+				$('.select-card-info.domestic').addClass('active')
+			} else {
+				$('.select-card-info').removeClass('active')
+				$('.select-card-info.foreign').addClass('active')
+			}
+		})
+
+		$('#chk-all').change(function() {
+			var checked = $('#chk-all').is(':checked');
+			if(checked) {
+				$('input[name=check_agree-item]').prop('checked', true);
+			} else {
+				$('input[name=check_agree-item]').prop('checked', false);
+			}
+		})
+
+		$('input[name=check_agree-item]').change(function() {
+			var length = $('input[name=check_agree-item]:checked').length;
+			if(length == 2) {
+				$('#chk-all').prop('checked', true);
+			} else {
+				$('#chk-all').prop('checked', false);
+			}
+			
+		})
+	</script>
+</body>
+
+</html>
