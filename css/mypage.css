@@ -26,6 +26,7 @@
 .mypage__header ul.breadcrumb li {
 	color: var(--color-gray03);
 	position: relative;
+	font-size: 14px;
 }
 
 .mypage__header ul.breadcrumb li:after {
@@ -69,4 +70,579 @@
 .mypage__tabmenu .left_tabmenu>li.active {
 	font-weight: bold;
 	color: var(--color-black);
+}
+
+/* 마이페이지 > 계정 정보 */
+.myinfo__inner {
+	max-width: 480px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 200px;
+}
+
+.myinfo_thumbnail {
+	margin-top: 80px;
+	text-align: center;
+	height: 195px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.thumbnail {
+	display: block;
+	width: 97px;
+	height: 97px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.select_thumbnail {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.thumbnail input[type="file"] {
+	position: absolute;
+	width: 0;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+}
+
+.thumbnail label {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.thumbnail label.btn_add {
+	background: url(../img/common/icon_file_add.svg) no-repeat center center / contain;
+}
+
+.thumbnail label.btn_modify {
+	background: url(../img/common/icon_file_modify.svg) no-repeat center center / contain;
+}
+
+.myinfo_thumbnail .btn_delete {
+	margin-top: 12px;
+	color: #8C8C8C;
+	display: none;
+}
+
+.myinfo_thumbnail .btn_delete.active {
+	display: inline-block;
+}
+
+.myinfo_thumbnail .email {
+	margin-top: 28px;
+}
+
+.myinfo_thumbnail .email span{
+	padding-left: 30px;
+	line-height: 25px;
+	position: relative;
+}
+
+.myinfo_thumbnail .email span:before {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 20px;
+	position: absolute;
+	top: 55%;
+	left: 0;
+	transform: translateY(-50%);
+	background: url(../img/common/icon_email.svg) no-repeat center center / contain;
+}
+
+.myinfo__content {
+	padding-top: 33px;
+	/* padding-bottom: 64px; */
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.myinfo__content .info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.myinfo__content .info>span {
+	font-weight: 500;
+	color: #505050;
+}
+
+.myinfo__content .info>b {
+	font-weight: 500;
+}
+
+.myinfo__content .info .point_info p {
+	text-align: right;
+}
+
+.myinfo__content .info .point_info p .point {
+	color: var(--color-main);
+}
+
+.myinfo__content .info .point_info small {
+	font-size: 12px;
+	color: #8C8C8C;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.checkbox--typeA.sns input[type=checkbox]+em {
+	transform: translate(-2px,-2px);
+}
+
+.checkbox--typeA.sns span {
+	display: inline-block;
+	width: 24px;
+	height: 24px;	
+}
+
+.checkbox--typeA.sns span.kakao {
+	background: url(../img/common/sns_kakao.svg) no-repeat center center / contain;
+}
+
+.checkbox--typeA.sns span.naver {
+	background: url(../img/common/sns_naver.svg) no-repeat center center / contain;
+}
+
+.checkbox--typeA.sns span.facebook {
+	background: url(../img/common/sns_facebook.svg) no-repeat center center / contain;
+}
+
+.myinfo__content .info .flex {
+	gap: 32px;
+}
+
+.myinfo__content .info.tel {
+	align-items: flex-start;
+}
+
+.myinfo__content .info.tel > span {
+	padding-top: 10px;
+}
+
+.recert__content {
+	width: 100%;
+	max-width: 354px;
+}
+
+.recert__content.not_cert {
+	padding-bottom: 64px;
+}
+
+.recert__content .tel_recert {
+	margin-top: 18px;
+	display: flex;
+	align-items: 10px;
+	gap: 10px;
+}
+
+.recert__content .tel_recert input {
+	width: 100%;
+}
+
+.recert__content .tel_recert .btn_recert {
+	display: inline-block;
+	width: 136px;
+	min-width: 136px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #8C8C8C;
+	border-radius: 8px;
+	font-weight: 500;
+}
+
+.btn-modify_info {
+	padding-top: 42px;
+	display: flex;
+	align-items: center;
+	gap: 21px;
+	margin-bottom: 22px;
+}
+
+.btn-modify_info>* {
+	display: inline-block;
+	width: 100%;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.btn_withdraw {
+	float: right;
+	color: #8C8C8C;
+}
+
+.tel_certification {
+	margin-top: 18px;
+	border-radius: 8px;
+	border: 1px solid #F0F0F0;
+	position: relative;
+}
+
+.tel_certification.type1 .btn_clear,
+.tel_certification.type1 .btn_send {
+	display: none;
+}
+
+.tel_certification input {
+	border: none !important;
+}
+
+.tel_certification input.invalid {
+	border: 1px solid var(--color-black) !important;
+}
+
+.tel_certification .btn_clear {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 105px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url(../img/common/icon_clear.svg) no-repeat center center / contain;
+}
+
+.tel_certification span.remain_time {
+	position: absolute;
+	right: 105px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	color: var(--color-red);
+}
+
+.tel_certification .btn_recertText {
+	position: absolute;
+	right: 105px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	color: var(--color-black);
+}
+
+.tel_certification .btn-miniType {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+}
+
+.tel_certification .btn_complete {
+	padding-left: 19px;
+}
+
+.tel_certification .btn_complete:after {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 8px;
+	background: url(../img/common/icon_btn_check.svg) no-repeat center center / contain;
+	position: absolute;
+	top: 50%;
+	left: 13px;
+	transform: translateY(-50%);
+}
+
+.recert__content span.err-text.not-before {
+	padding-left: 0px;
+}
+
+
+.recert__content span.err-text.not-before:before {
+	content: none;
+}
+
+.recert__content > small {
+	color: var(--color-main);
+	font-size: 13px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+/* 비밀번호 변경 */
+.mypage__box {
+	max-width: 460px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 80px;
+	padding-bottom: 200px;
+}
+
+.mypage__box h3 {
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.mypage__box > p {
+	color: #505050;
+	margin-top: 12px;
+	text-align: center;
+}
+
+.form_mypage {
+	margin-top: 32px;
+}
+
+.form_mypage .input {
+	margin-bottom: 10px;
+}
+
+.form_mypage p.info {
+	background-color: #FAFAFA;
+	font-size: 12px;
+	color: #8C8C8C;
+	text-align: center;
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	margin-top: 10px;
+}
+
+.form_mypage .btns {
+	margin-top: 50px;
+}
+
+.form_mypage .btns .btn-bigType {
+	display: inline-block;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+
+/* 휴대폰 재인증 */
+.mypage__box.box-tel_recert>h3 {
+	padding-bottom: 24px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.box-tel_recert .form_mypage h5 {
+	font-weight: 500;	
+	margin-bottom: 10px;
+}
+
+.box-tel_recert .recert__content {
+	max-width: 100%;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.box-tel_recert .btns {
+	margin-top: 50px;
+}
+
+/* 정보변경 */
+.myinfo__inner.change_info {
+	padding-top: 80px;
+}
+
+.myinfo__inner.change_info > h3 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.myinfo__inner.change_info .myinfo_thumbnail {
+	height: auto;
+	margin-top: 0;
+	padding-bottom: 32px;
+}
+
+.myinfo__inner.change_info .myinfo__content {
+	border-bottom: none;
+}
+
+.myinfo__inner.change_info .form_mypage {
+	margin-top: 16px;
+}
+
+.form_mypage .input_flex {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin-bottom: 32px;
+}
+
+.form_mypage .input_flex>span {
+	display: inline-block;
+	min-width: 107px;
+}
+
+.form_mypage .input_flex .input_checkbox {
+	display: flex;
+	align-items: center;
+	gap: 46px;
+}
+
+.form_mypage .input_box {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+/* 탈퇴하기 */
+.box-resign>p {
+	border-bottom: 1px solid #F0F0F0;
+	padding-bottom: 33px;
+}
+
+.box-resign .form_mypage .input .checkbox--typeA {
+	margin-bottom: 24px;
+}
+
+.box-resign .form_mypage .input {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.form_mypage .with-textarea {
+	display: flex;
+	gap: 14px;
+}
+
+.form_mypage .with-textarea textarea {
+	width: calc(100% - 80px);
+	background-color: #F0F0F0;
+	border: none;
+}
+
+.box-resign .notice_list {
+	margin-left: 24px;
+	padding-top: 40px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.box-resign .notice_list>div {
+	margin-bottom: 50px;
+}
+
+.box-resign .notice_list > div h5{
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 33px;
+	line-height: 26px;
+	text-indent: -20px;
+}
+
+.box-resign .notice_list>div ul {
+	margin-left: 4px;
+}
+
+.box-resign .notice_list>div ul li {
+	margin-bottom: 35px;
+	line-height: 24px;
+	color: #505050;
+	position: relative;
+}
+
+.box-resign .notice_list>div ul li:last-child {
+	margin-bottom: 0px;
+}
+
+.box-resign .notice_list>div ul li:before {
+	content: '';
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	background-color: #505050;
+	border-radius: 50%;
+	position: absolute;
+	top: 13px;
+	left: -10px;
+	transform: translateY(-50%);
+}
+
+.box-resign.step2 .form_mypage .input {
+	padding-bottom: 0px;
+	border-bottom: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-resign.step3>h3 {
+	padding-bottom: 32px;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.form_mypage .input .title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 33px;
+}
+
+.form_mypage .input .title span {
+	font-size: 18px;
+	font-weight: 500;
+	padding-left: 16px;
+	position: relative;
+}
+
+.form_mypage .input .title span:before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background-color: var(--color-black);
+	position: absolute;
+	border-radius: 50%;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.form_mypage .input .title small {
+	color: #707070;
+	font-size: 12px;
+}
+
+.box-resign.step3 .form_mypage .input {
+	border: none;
+}
+
+.form_mypage .sns_href {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 48px;
+}
+
+.form_mypage .sns_href > a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.form_mypage .sns_href>a.link_kakao {
+	background: url(../img/common/sns_kakao.svg) no-repeat center center / contain;
+}
+.form_mypage .sns_href>a.link_naver {
+	background: url(../img/common/sns_naver.svg) no-repeat center center / contain;
+}
+.form_mypage .sns_href>a.link_facebook {
+	background: url(../img/common/sns_facebook.svg) no-repeat center center / contain;
+}
+
+.box-resign.step3 .form_mypage .btns {
+	padding-top: 50px;
+	margin-top: 0px;
+	border-top: 1px solid #F0F0F0;
 }

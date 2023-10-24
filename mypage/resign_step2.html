@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>커넥티드</title>
+	<link rel="icon" href="../img/common/logo_icon.svg">
+	<!-- jQuery CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!-- NiceSelect -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+	<!-- Custom CSS & JS -->
+	<link rel="stylesheet" href="/css/common2.css">
+	<script src="/js/common.js" defer></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<div class="band-banner">
+				<div class="banner" style="background-color: #0A0A0A;">
+					<div class="banner_box">
+						<img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+						<button type="button" class="btn_close"></button>
+					</div>
+				</div>
+				<!-- <div class="banner" style="background-color: #0A0A0A;">
+                <div class="banner_box">
+                  <img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+                  <button type="button" class="btn_close"></button>
+                </div>
+              </div> -->
+			</div>
+			<div class="header__inner">
+				<div class="hd__top">
+					<div class="hd-search">
+						<a href="/" class="logo">
+							<img src="../img/common/logo.svg" alt="커넥티드 로고">
+						</a>
+						<form action="" class="form_hd-search">
+							<fieldset>
+								<div class="search">
+									<input type="text" placeholder="검색어를 입력하세요.">
+									<button type="button" class="btn_search"></button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class="hd-language">
+						<ul class="hd-navigation">
+							<li>
+								<div class="setting-lang">
+									<span class="current">KOR</span>
+									<button type="button" class="btn_open"></button>
+									<ul class="lang_list">
+										<li>KOR</li>
+										<li>ENG</li>
+										<li>CN</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="hd__bottom">
+					<div class="hd_category_gnb">
+						<div class="category">
+							<div class="category_icon">
+								<span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+							<p>전체 카테고리</p>
+							<button type="button" class="btn_open"></button>
+						</div>
+						<nav id="gnb">
+							<ul>
+								<li><a href="#">학교</a></li>
+								<li><a href="#">온라인학교</a></li>
+								<li><a href="#">단기활동</a></li>
+								<li><a href="#">온라인 단기활동</a></li>
+								<li><a href="#">매거진</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="hd_login">
+						<!-- 비로그인 환경 -->
+						<!-- <a href="#" class="btn_login">로그인</a>
+                <a href="#" class="btn-smType btn-round btn_signup">회원가입</a> -->
+						<!-- 로그인 환경 -->
+						<a href="#" class="btn_logout">로그아웃</a>
+						<div class="hd_mypage">
+							<button type="button" class="btn-smType btn-round btn_mypage">마이페이지</button>
+							<ul class="mypage_list">
+								<li><a href="#" class="my_noti">알림</a></li>
+								<li><a href="#" class="my_like">관심리스트</a></li>
+								<li><a href="#" class="my_portfolio">포트폴리오</a></li>
+								<li><a href="#" class="my_payment">결제내역</a></li>
+								<li><a href="#" class="my_aplc">지원서 리스트</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 전체 카테고리 -->
+			<div id="hd_category">
+				<div class="category__inner">
+					<ul class="category">
+						<!-- TODO : 선택된 li에 active 클래스 추가 -->
+						<li>학교</li>
+						<li>온라인학교</li>
+						<li>단기활동</li>
+						<li>온라인 단기활동</li>
+						<li>매거진</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="mypage__inner">
+					<div class="mypage__header">
+						<h2>커넥티드 회원 탈퇴</h2>
+						<ul class="breadcrumb">
+							<li>Home</li>
+							<li>마이페이지</li>
+							<li>계정 정보</li>
+							<li>회원 탈퇴</li>
+						</ul>
+					</div>
+					<div class="mypage__content">
+						<div class="mypage__box box-resign step2">
+							<h3>커넥티드 회원 탈퇴</h3>
+							<p>탈퇴 시 유의사항 안내</p>
+							<div class="notice_list">
+								<div>
+									<h5>1. 현재 사용중인 계정정보는 복구 불가능합니다.</h5>
+									<ul>
+										<li>탈퇴 시 현재 사용하고 계신 계정 정보는 재생이 불가능한 방법으로 파기되며 본인과 타인 모두 복구가 불가능합니다.</li>
+										<li>현재 사용중인 아이디의 경우 탈퇴 후 24시간 이후부터
+											동일 아이디로 재가입이 가능합니다.</li>
+									</ul>
+								</div>
+								<div>
+									<h5>2. 회원 탈퇴 시, 회원님의 모든 혜택이 소멸되어 어떠한 경우에도 복구할 수 없습니다.</h5>
+									<ul>
+										<li>리뷰와 문의 게시물은 삭제되지 않고 유지됩니다.</li>
+										<li>탈퇴 후에는 회원정보가 삭제되어 본인 여부를 확인할 수 있는 방법이 없으므로 게시글을 임의로 삭제할 수 없습니다.</li>
+									</ul>
+								</div>
+								<div>
+									<h5>3. 게시판형 서비스에 등록된 게시물은 삭제되지 않고 유지됩니다.</h5>
+									<ul>
+										<li>잔여 커넥티드 포인트 (회원당 잔여 포인트 노출)Point <span class="c-red">즉시 소멸</span></li>
+									</ul>
+								</div>
+							</div>
+							<form action="" class="form_mypage">
+								<fieldset>
+									<div class="input">
+										<div class="checkbox--typeA">
+											<label for='chk'>
+												<input type='checkbox' id='chk'><em></em> 유의사항을 모두 확인하였으며 탈퇴에 동의합니다
+											</label>
+										</div>
+									</div>
+									<div class="btns">
+										<button type="button" class="btn-bigType">다음</button>
+										<a href="#" class="btn-bigType btn--light">취소</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer__inner">
+				<div class="ft__cmpny-info">
+					<div class="logo">
+						<img src="../img/common/logo.svg" alt="커넥티드 로고">
+					</div>
+					<button type="button" class="btn_consult"><span>전화상담 예약</span></button>
+					<div class="company-info">
+						<em>(주)비엘에프</em> | <em>대표</em> 박보미<br>
+						<em>사업자등록번호</em> 442-81-01686 | <em>통신판매업신고</em> 제2020-경기하남-2190호<br>
+						<em>주소</em> 경기도 하남시 미사대로 550 711호<br>
+						<em>호스팅 사업자</em> Amazon Web Service (AWS)<br>
+					</div>
+					<div class="tel">
+						<em>대표번호</em> 031-8027-7611~3 (토요일, 공휴일 휴무)<br>
+						오전 9시30분 - 오후 5시30분<br>
+						매달 마지막 금요일은 오후 3시30분까지
+					</div>
+					<p class="copyright">copyright 2023 Connect.ED. All rights Reserved</p>
+				</div>
+				<div class="ft__menu">
+					<div class="ft__gnb">
+						<dl class="menu">
+							<dt>커넥티드</dt>
+							<dd>커넥티드 메인</dd>
+							<dd>커넥티드 파트너스</dd>
+						</dl>
+						<dl class="menu">
+							<dt>해외교육</dt>
+							<dd>맞춤 유학 찾기</dd>
+							<dd>학교</dd>
+							<dd>온라인 스쿨</dd>
+							<dd>단기활동</dd>
+						</dl>
+						<dl class="menu">
+							<dt>고객센터</dt>
+							<dd>자주묻는질문</dd>
+							<dd>공지사항</dd>
+							<dd>전화상담 예약</dd>
+						</dl>
+						<div class="setting-lang">
+							<span class="current">KOR</span>
+							<button type="button" class="btn_open"></button>
+							<ul class="lang_list">
+								<li>KOR</li>
+								<li>ENG</li>
+								<li>CN</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ft__sns">
+						<ul>
+							<li><a href="#" class="sns_blog"></a></li>
+							<li><a href="#" class="sns_facebook"></a></li>
+							<li><a href="#" class="sns_insta"></a></li>
+						</ul>
+						<div class="terms-use">
+							<button type="button">이용약관</button>
+							<button type="button">개인정보보호정책</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -58,6 +58,11 @@
   border-radius: 50px;
 }
 
+.btn--primary {
+  background-color: var(--color-main);
+  color: #fff;
+}
+
 .btn--light {
   background-color: var(--color-soft-yellow);
   color: var(--color-main);
@@ -73,10 +78,19 @@
   color: var(--color-gray04);
 }
 
+.btn--black {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
 .btn_area {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.c-red {
+  color: var(--color-red);
 }
 
 /* 전체보기 버튼 */
@@ -185,7 +199,8 @@
 
 /* Form */
 input[type=text],
-input[type=password] {
+input[type=password],
+input[type=number] {
   border: 1px solid var(--color-gray02);
   border-radius: 8px;
   background-color: #fff;
@@ -203,8 +218,15 @@ textarea::placeholder {
 }
 
 input[type=text]:invalid,
-input[type=password]:invalid {
+input[type=password]:invalid,
+input[type=number]:invalid {
   border: 1px solid var(--color-red);
+}
+
+input[type=text]:disabled,
+input[type=password]:disabled,
+input[type=number]:disabled {
+  background-color: #F0F0F0;
 }
 
 /* Error Text */
@@ -268,6 +290,10 @@ span.asterisk {
 
 .checkbox--typeA input[type=checkbox]:checked+em {
   background: url(../img/common/icon_checkbox_on.svg) no-repeat center center / contain;
+}
+
+.checkbox--typeA input[type=checkbox]:checked:disabled+em {
+  background: url(../img/common/icon_checkbox.svg) no-repeat center center / contain;
 }
 
 .checkbox--typeA input[type=checkbox]:disabled+em {
